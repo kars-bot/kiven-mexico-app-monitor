@@ -42,11 +42,11 @@ jobs:
             cp -R history/. work/automation-tools/google-play-scraper/reports/
           fi
       - name: 安装采集依赖
-        if: github.event_name == 'schedule' || inputs.collect == true
+        if: github.event_name != 'workflow_dispatch' || inputs.collect == true
         working-directory: work/automation-tools/google-play-scraper
         run: npm ci --omit=dev --ignore-scripts --no-audit --no-fund
       - name: 采集墨西哥商店数据
-        if: github.event_name == 'schedule' || inputs.collect == true
+        if: github.event_name != 'workflow_dispatch' || inputs.collect == true
         run: node work/collect.mjs
       - name: 生成中文数据与保留历史
         run: node work/publish.mjs
