@@ -5,8 +5,8 @@
         "appId": "com.elaworld.mexloan",
         "title": "MexDin: Préstamos de crédito",
         "developer": "MexDin",
-        "score": 4.7140045,
-        "ratings": 200831,
+        "score": 4.713864,
+        "ratings": 200835,
         "reviews": 75056,
         "installs": "5.000.000+",
         "version": "2.3.7",
@@ -17,15 +17,16 @@
         "url": "https://play.google.com/store/apps/details?id=com.elaworld.mexloan&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 8029,
+          "1": 8037,
           "2": 1344,
-          "3": 3530,
-          "4": 14219,
-          "5": 173704
+          "3": 3529,
+          "4": 14217,
+          "5": 173703
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "728b3179-bf8d-47fc-bf55-09b3b5614c01",
         "61c2e10d-1c15-4fee-83df-027f4e9e790c",
         "6bceddaf-5a14-46f4-ba08-2bd3d72c3a7d",
         "ec3939c2-b20f-4597-bd85-15c921ec9801",
@@ -170,9 +171,9 @@
         "appId": "com.mercadopago.wallet",
         "title": "Mercado Pago: Cuenta Digital",
         "developer": "Mercado Libre",
-        "score": 4.862421,
-        "ratings": 14942472,
-        "reviews": 433708,
+        "score": 4.8624244,
+        "ratings": 14942727,
+        "reviews": 433718,
         "installs": "100.000.000+",
         "version": "2.458.2",
         "updated": 1792414111000,
@@ -181,15 +182,23 @@
         "url": "https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 158001,
-          "2": 49220,
-          "3": 178044,
-          "4": 919999,
-          "5": 13637195
+          "1": 158015,
+          "2": 49209,
+          "3": 178058,
+          "4": 919945,
+          "5": 13637493
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "e568d50d-82a4-4d8e-ae40-9306d07c7f6a",
+        "2241068b-8c1a-4c18-b6b6-faa2b30b3fed",
+        "43b746a5-20aa-45a3-8813-fd9b399f84fb",
+        "69dbd9bd-a6a9-4eff-9158-f0b080f3efd4",
+        "76610c72-2969-44f3-a523-601d370f3741",
+        "b68f7d36-6f78-437f-aa0c-9514a9ca9a89",
+        "af57d2cd-a78f-46e2-a799-c23bc669a5ad",
+        "a3d91f88-eaf9-4bc1-817c-1bc36ff73989",
         "9a979043-9ad9-45e0-8b52-4ed3bd6e4ab9",
         "2d5acbd2-b59e-4f78-aa33-5da150f3d7d4",
         "8ab30da8-c9d8-48b2-b029-a58ca101209f",
@@ -449,9 +458,9 @@
         "appId": "com.didiglobal.cashloan",
         "title": "DiDi Finanzas: Rápido y seguro",
         "developer": "DiDi Global",
-        "score": 4.81925,
-        "ratings": 1323573,
-        "reviews": 425862,
+        "score": 4.819206,
+        "ratings": 1323585,
+        "reviews": 425868,
         "installs": "10.000.000+",
         "version": "3.2.2",
         "updated": 1790144747000,
@@ -461,15 +470,23 @@
         "url": "https://play.google.com/store/apps/details?id=com.didiglobal.cashloan&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 34884,
-          "2": 6346,
-          "3": 13172,
-          "4": 54305,
+          "1": 34901,
+          "2": 6345,
+          "3": 13171,
+          "4": 54300,
           "5": 1214861
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "1ce7c796-580c-427f-a5ee-527db58fc7bc",
+        "9112fc48-3dc7-430a-9b48-2318d5b346e0",
+        "989eab72-a276-46f7-95eb-4e38bc539d9c",
+        "3ba95578-f341-4770-ba1f-22ba0cd7a689",
+        "cd652b70-2fe5-4797-9561-ce1aa540b7a2",
+        "3fdf3b73-7bfb-4b9a-8a2b-2edd66eb9f2c",
+        "c1acb301-29fd-4ba6-8462-322af4456168",
+        "8c836fc1-fb7b-440e-b443-ac2354870d9b",
         "0e2e58fc-78d7-4f49-b416-bfd034a98684",
         "2acdf2fd-741c-4471-b5b4-fe34f690862d",
         "f1150e59-b4ee-4c74-896e-b95669737d85",
@@ -716,8 +733,8 @@
         "appId": "com.kueski.os",
         "title": "Kueski: Compras y Préstamos",
         "developer": "Kueski S.A.P.I de C.V., SOFOM, E.N.R.",
-        "score": 4.316246,
-        "ratings": 36769,
+        "score": 4.3164315,
+        "ratings": 36771,
         "reviews": 14845,
         "installs": "10.000.000+",
         "version": "2.98.0",
@@ -728,11 +745,11 @@
         "url": "https://play.google.com/store/apps/details?id=com.kueski.os&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 3968,
+          "1": 3967,
           "2": 1235,
           "3": 1574,
           "4": 2402,
-          "5": 27583
+          "5": 27587
         },
         "role": "competitor"
       },
@@ -861,9 +878,9 @@
         "appId": "com.nu.production",
         "title": "Nu: Crédito y Cuenta de Ahorro",
         "developer": "Nu",
-        "score": 4.8072133,
-        "ratings": 5943272,
-        "reviews": 107522,
+        "score": 4.807226,
+        "ratings": 5943280,
+        "reviews": 107523,
         "installs": "100.000.000+",
         "version": "VARY",
         "updated": 1792152214000,
@@ -873,15 +890,17 @@
         "url": "https://play.google.com/store/apps/details?id=com.nu.production&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 127873,
+          "1": 127857,
           "2": 35745,
           "3": 80423,
-          "4": 366146,
-          "5": 5333052
+          "4": 366129,
+          "5": 5333094
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "9e75e0b6-725a-411e-9e75-864e9a30a247",
+        "ddbfc29c-cb79-4c49-bd34-3c53873172bd",
         "85d9431f-6994-4fa8-b74e-cc48c1444362",
         "f1df2944-886c-4ffd-8bde-1c7405e8df92",
         "5770da3e-f5b7-46e4-b906-077eeb93f388",
@@ -1046,8 +1065,8 @@
         "appId": "com.clipcd.clipgo",
         "title": "Mi Clip: Paga Con Tu Celular",
         "developer": "Clip Cartera Digital",
-        "score": 3.960591,
-        "ratings": 2018,
+        "score": 3.9656863,
+        "ratings": 2019,
         "reviews": 770,
         "installs": "500.000+",
         "version": "1.0.14",
@@ -1057,15 +1076,16 @@
         "url": "https://play.google.com/store/apps/details?id=com.clipcd.clipgo&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 376,
+          "1": 375,
           "2": 49,
           "3": 148,
-          "4": 139,
-          "5": 1301
+          "4": 138,
+          "5": 1306
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "ecf8ccb6-1844-49af-afd4-413105895529",
         "f13d386d-470d-409e-865f-f38b98884992",
         "e60c51c7-b41e-4f76-bdbf-6d1e9555844f",
         "2527ac43-85ca-4791-9539-c9da49abe8f9",
@@ -1166,7 +1186,6 @@
         "b9d14b96-1b06-4d84-b443-c64e88eb3ef8",
         "c52fb3d9-6d7f-4da5-9c52-82a1f847f520",
         "ceda82e0-0255-4a7a-89cc-cfb84770da6b",
-        "ecf8ccb6-1844-49af-afd4-413105895529",
         "59c91d89-245e-40e5-8c52-800a264e81de",
         "917b423f-01b9-4381-a0e3-2a83a11fb0bf",
         "9df13984-1c98-48c8-850b-f3eebd74fdda",
@@ -1180,8 +1199,8 @@
         "appId": "com.fintopia.mxcredmex",
         "title": "Credmex: Préstamos de dinero",
         "developer": "Credmex",
-        "score": 4.748065,
-        "ratings": 753147,
+        "score": 4.748081,
+        "ratings": 753149,
         "reviews": 87133,
         "installs": "10.000.000+",
         "version": "3.24.0",
@@ -1191,11 +1210,11 @@
         "url": "https://play.google.com/store/apps/details?id=com.fintopia.mxcredmex&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 19058,
+          "1": 19056,
           "2": 3684,
-          "3": 16882,
-          "4": 68686,
-          "5": 644832
+          "3": 16881,
+          "4": 68682,
+          "5": 644840
         },
         "role": "competitor"
       },
@@ -1390,9 +1409,9 @@
         "appId": "com.duxifinanzas.finance",
         "title": "Duxi Finanzas: Préstamo Seguro",
         "developer": "Duxi Finanzas",
-        "score": 4.933721,
-        "ratings": 270671,
-        "reviews": 28296,
+        "score": 4.9336486,
+        "ratings": 270701,
+        "reviews": 28301,
         "installs": "1.000.000+",
         "version": "1.3.0",
         "updated": 1791905912000,
@@ -1402,15 +1421,19 @@
         "url": "https://play.google.com/store/apps/details?id=com.duxifinanzas.finance&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 2408,
+          "1": 2416,
           "2": 310,
-          "3": 1243,
-          "4": 4885,
-          "5": 261822
+          "3": 1241,
+          "4": 4880,
+          "5": 261850
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "19a53385-64ab-4b70-ba00-3d072239cf69",
+        "4149571e-1c01-4332-97be-49e1e3b9cb32",
+        "3909749a-e6a1-4579-8caa-f6593bb80b14",
+        "4278345d-ffbd-42d7-9fc2-51e1fd42cfcb",
         "ad54a81c-825e-416e-9076-b1c1c172571b",
         "7776726b-b16e-4ed2-b387-c9b2c5e698bf",
         "0fecafd2-a03c-467a-a761-83425d666e1a",
@@ -1633,9 +1656,9 @@
         "appId": "com.mexicash.app",
         "title": "MexiCash-Préstamos de crédito",
         "developer": "Mexicash",
-        "score": 4.7667785,
-        "ratings": 390789,
-        "reviews": 41244,
+        "score": 4.7668304,
+        "ratings": 390814,
+        "reviews": 41243,
         "installs": "10.000.000+",
         "version": "1.3.2",
         "updated": 1792391884000,
@@ -1644,15 +1667,16 @@
         "url": "https://play.google.com/store/apps/details?id=com.mexicash.app&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 7627,
-          "2": 2108,
-          "3": 10141,
-          "4": 34013,
-          "5": 336894
+          "1": 7623,
+          "2": 2107,
+          "3": 10155,
+          "4": 33993,
+          "5": 336932
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "1de76c2c-4528-4c32-8670-4f306cdbd926",
         "7c43856a-456e-455f-b7b7-7a374dae6cfa",
         "ac476db0-2f42-44ad-8d2f-cd2db22980c9",
         "99a5a319-a14c-486d-9498-a887fbf2aeae",
@@ -1849,8 +1873,8 @@
         "appId": "com.crediclic.mx",
         "title": "MontoClic：Crédito Seguro",
         "developer": "MontoClic Dev",
-        "score": 4.4540815,
-        "ratings": 1914,
+        "score": 4.456853,
+        "ratings": 1915,
         "reviews": 814,
         "installs": "100.000+",
         "version": "1.4.0",
@@ -1861,11 +1885,11 @@
         "url": "https://play.google.com/store/apps/details?id=com.crediclic.mx&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 205,
+          "1": 204,
           "2": 19,
           "3": 29,
-          "4": 107,
-          "5": 1552
+          "4": 106,
+          "5": 1555
         },
         "role": "competitor"
       },
@@ -1983,9 +2007,9 @@
         "appId": "com.quieroya.prestamo.loan.cash.credit.mx",
         "title": "Qrece: Préstamos de dinero",
         "developer": "Qrece Developer",
-        "score": 4.878545,
-        "ratings": 32840,
-        "reviews": 3879,
+        "score": 4.8776093,
+        "ratings": 32846,
+        "reviews": 3880,
         "installs": "500.000+",
         "version": "1.6.0",
         "updated": 1790604215000,
@@ -1994,15 +2018,16 @@
         "url": "https://play.google.com/store/apps/details?id=com.quieroya.prestamo.loan.cash.credit.mx&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 630,
+          "1": 638,
           "2": 84,
           "3": 122,
-          "4": 968,
+          "4": 967,
           "5": 31032
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "5aa24b2f-0afd-4188-b10c-ecd88769b801",
         "83d09223-dc35-408b-b6c9-1cd2966e6ac7",
         "ef2058f5-8f31-4faf-8167-c381457a47f0",
         "b0840edc-297b-46e0-b312-d2f62bda0a64",
@@ -2156,8 +2181,8 @@
         "appId": "mx.com.tala",
         "title": "Tala: Acceso a tu Crédito",
         "developer": "Tala Mobile",
-        "score": 4.79848,
-        "ratings": 787908,
+        "score": 4.798477,
+        "ratings": 787907,
         "reviews": 467088,
         "installs": "10.000.000+",
         "version": "26.21.0",
@@ -2171,7 +2196,7 @@
           "2": 3048,
           "3": 6438,
           "4": 24854,
-          "5": 725589
+          "5": 725588
         },
         "role": "competitor"
       },
@@ -2430,9 +2455,9 @@
         "appId": "com.sggaanalista.rapikredito",
         "title": "Rápikrédito Préstamos crédito",
         "developer": "Rápikrédito",
-        "score": 4.7850018,
-        "ratings": 862524,
-        "reviews": 90593,
+        "score": 4.7850375,
+        "ratings": 862556,
+        "reviews": 90596,
         "installs": "5.000.000+",
         "version": "2.6.0",
         "updated": 1790164041000,
@@ -2442,15 +2467,18 @@
         "url": "https://play.google.com/store/apps/details?id=com.sggaanalista.rapikredito&hl=es&gl=mx",
         "genre": "Finanzas",
         "histogram": {
-          "1": 15980,
-          "2": 5708,
-          "3": 20953,
-          "4": 62483,
-          "5": 757396
+          "1": 15975,
+          "2": 5706,
+          "3": 20956,
+          "4": 62481,
+          "5": 757434
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "ecee8b42-6502-47ea-b558-15cce64944b0",
+        "39a1ef48-7c0c-46de-9783-4e56eb36a1c1",
+        "9a791723-3402-4202-843e-3e21cf0bfc96",
         "40d9a586-9042-45f5-acbd-0c0b0f646d17",
         "e3129e16-670e-42fc-8e4c-969271fc6ebe",
         "4921b618-f7e1-4c10-baa6-785b15c22412",
@@ -2666,8 +2694,8 @@
         "appId": "com.dinero.fd.mx.loan",
         "title": "FortaPrest-Préstamos en línea",
         "developer": "Fortaprest",
-        "score": 4.655023,
-        "ratings": 441966,
+        "score": 4.655031,
+        "ratings": 441967,
         "reviews": 68235,
         "installs": "5.000.000+",
         "version": "6.0.3",
@@ -2680,13 +2708,14 @@
         "histogram": {
           "1": 13288,
           "2": 5376,
-          "3": 17398,
-          "4": 48383,
-          "5": 357517
+          "3": 17397,
+          "4": 48382,
+          "5": 357519
         },
         "role": "competitor"
       },
       "seenReviewIds": [
+        "10feed6a-e55a-49b0-bb4c-95701f00645c",
         "9afc81c7-8919-44b2-9aaa-94ee4060c922",
         "c011b20e-8578-40ff-9a80-6e89c48716f6",
         "19357217-b5fc-4f30-8940-6fbd4ea074b6",
@@ -2805,8 +2834,8 @@
         "appId": "mx.creo.credit",
         "title": "Booya- Préstamos de crédito",
         "developer": "Creo solutions",
-        "score": 4.817202,
-        "ratings": 90826,
+        "score": 4.8172417,
+        "ratings": 90828,
         "reviews": 9430,
         "installs": "1.000.000+",
         "version": "2.3.1",
@@ -2821,7 +2850,7 @@
           "2": 197,
           "3": 543,
           "4": 2975,
-          "5": 84120
+          "5": 84124
         },
         "role": "competitor"
       },
@@ -2956,7 +2985,7 @@
         "developer": "Navi Cred, S.A. de C.V. SOFOM, E.N.R.",
         "score": 4.7843533,
         "ratings": 48115,
-        "reviews": 4749,
+        "reviews": 4750,
         "installs": "500.000+",
         "version": "2.0.0",
         "updated": 1789030794000,
@@ -3088,9 +3117,9 @@
         "appId": "com.kiven.mx",
         "title": "Kiven",
         "developer": "cem developer",
-        "score": 4.976744,
-        "ratings": 248,
-        "reviews": 75,
+        "score": 4.9769588,
+        "ratings": 250,
+        "reviews": 76,
         "installs": "1.000+",
         "version": "1.0.3",
         "updated": 1789455221000,
@@ -3103,7 +3132,7 @@
           "2": 1,
           "3": 0,
           "4": 2,
-          "5": 244
+          "5": 246
         },
         "role": "self"
       },
