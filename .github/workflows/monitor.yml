@@ -5,6 +5,8 @@ on:
     paths: [seed.zip, '.github/workflows/monitor.yml']
   schedule:
     - cron: '30 3 * * *'
+    - cron: '45 3 * * *'
+    - cron: '15 4 * * *'
   workflow_dispatch:
     inputs:
       collect:
@@ -41,16 +43,44 @@ jobs:
           if [ -d history ]; then
             cp -R history/. work/automation-tools/google-play-scraper/reports/
           fi
+      - name: 检查当天网站是否已成功更新
+        id: daily
+        env:
+          SITE_INDEX_URL: https://kars-bot.github.io/kiven-mexico-app-monitor/data/index.json
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs/promises';
+          const now = new Date();
+          const day = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
+          const due = Date.parse(day + 'T11:30:00+08:00');
+          const config = JSON.parse(await fs.readFile('work/automation-tools/google-play-scraper/config.json', 'utf8'));
+          let alreadyPublished = false;
+          if (process.env.GITHUB_EVENT_NAME === 'schedule') {
+            try {
+              const response = await fetch(process.env.SITE_INDEX_URL + '?check=' + now.getTime(), { signal: AbortSignal.timeout(20000), headers: { 'Cache-Control': 'no-cache' } });
+              if (!response.ok) throw Error('HTTP ' + response.status);
+              const index = await response.json();
+              const latest = index.batches?.find(batch => batch.startedAt === index.latestBatch);
+              alreadyPublished = !!latest && Date.parse(latest.startedAt) >= due && Date.parse(latest.finishedAt) <= now.getTime() && latest.apps >= config.apps.length && latest.errors === 0;
+            } catch {
+              console.log('无法确认网站当天已成功更新，将执行采集和发布。');
+            }
+          }
+          await fs.appendFile(process.env.GITHUB_OUTPUT, 'run=' + !alreadyPublished + '\n');
+          await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, alreadyPublished ? '今天北京时间 11:30 后网站已成功更新，跳过重复采集和部署。\n' : '执行采集并发布网站。北京时间主任务 11:30，补漏检查 11:45、12:15。\n');
+          JS
       - name: 安装采集依赖
-        if: github.event_name != 'workflow_dispatch' || inputs.collect == true
+        if: steps.daily.outputs.run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.collect == true)
         working-directory: work/automation-tools/google-play-scraper
         run: npm ci --omit=dev --ignore-scripts --no-audit --no-fund
       - name: 采集墨西哥商店数据
-        if: github.event_name != 'workflow_dispatch' || inputs.collect == true
+        if: steps.daily.outputs.run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.collect == true)
         run: node work/collect.mjs
       - name: 生成中文数据与保留历史
+        if: steps.daily.outputs.run == 'true'
         run: node work/publish.mjs
       - name: 保存采集历史
+        if: steps.daily.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -60,11 +90,14 @@ jobs:
             git push
           fi
       - name: 配置 Pages
+        if: steps.daily.outputs.run == 'true'
         uses: actions/configure-pages@v5
       - name: 上传网页
+        if: steps.daily.outputs.run == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: work/site
       - name: 发布固定网址
+        if: steps.daily.outputs.run == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
