@@ -1,0 +1,45 @@
+name: 本机采集完成后发布网站
+on:
+  repository_dispatch:
+    types: [local-monitor-ready]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: app-monitor-pages
+  cancel-in-progress: false
+jobs:
+  publish-local:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 读取最新采集历史
+        uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: 安装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: 恢复网站与合并历史
+        run: |
+          unzip -q seed.zip -d work
+          cp -R history/. work/automation-tools/google-play-scraper/reports/
+      - name: 生成网站数据
+        run: node work/publish.mjs
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+      - name: 上传网页
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: work/site
+      - name: 发布固定网址
+        id: deployment
+        uses: actions/deploy-pages@v4
