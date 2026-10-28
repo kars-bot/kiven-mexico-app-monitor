@@ -62,12 +62,20 @@ jobs:
               const index = await response.json();
               const latest = index.batches?.find(batch => batch.startedAt === index.latestBatch);
               alreadyPublished = !!latest && Date.parse(latest.startedAt) >= due && Date.parse(latest.finishedAt) <= now.getTime() && latest.apps >= config.apps.length && latest.errors === 0;
+              if (alreadyPublished) {
+                const rankingUrl = new URL('rankings.json', process.env.SITE_INDEX_URL);
+                const rankingResponse = await fetch(rankingUrl + '?check=' + now.getTime(), { signal: AbortSignal.timeout(20000), headers: { 'Cache-Control': 'no-cache' } });
+                if (!rankingResponse.ok) throw Error('Ranking HTTP ' + rankingResponse.status);
+                const rankings = await rankingResponse.json();
+                alreadyPublished = rankings.days?.some(row => row.day === day && row.status === 'ok' && Date.parse(row.capturedAt) >= due && Date.parse(row.capturedAt) <= now.getTime() && row.coverage >= 100 && row.coverage <= 200 && row.apps?.length === config.apps.length && config.apps.every(app => row.apps.some(r => r.appId === app.appId))) === true;
+              }
             } catch {
+              alreadyPublished = false;
               console.log('无法确认网站当天已成功更新，将执行采集和发布。');
             }
           }
           await fs.appendFile(process.env.GITHUB_OUTPUT, 'run=' + !alreadyPublished + '\n');
-          await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, alreadyPublished ? '今天北京时间 11:30 后网站已成功更新，跳过重复采集和部署。\n' : '执行采集并发布网站。北京时间主任务 11:30，补漏检查 11:45、12:15。\n');
+          await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, alreadyPublished ? '今天北京时间 11:30 后评分评论与金融免费榜均已发布，跳过重复采集和部署。\n' : '执行采集并发布网站。北京时间主任务 11:30，补漏检查 11:45、12:15。\n');
           JS
       - name: 安装采集依赖
         if: steps.daily.outputs.run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.collect == true)
