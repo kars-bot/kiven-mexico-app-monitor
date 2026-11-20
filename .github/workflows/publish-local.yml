@@ -16,9 +16,6 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: 读取最新采集历史
         uses: actions/checkout@v6
@@ -40,6 +37,19 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: work/site
+  deploy:
+    needs: publish-local
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 等待已上传网页就绪
+        run: sleep 10
       - name: 发布固定网址
         id: deployment
         uses: actions/deploy-pages@v4
